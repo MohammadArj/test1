@@ -1,0 +1,93 @@
+{
+    "template_title": "فایل منیجر",
+    "table": "file_storage",
+    "sections": {
+        "all": true,
+        "delete": true,
+        "multiple_delete": true,
+        "upload_pic_all": true
+    },
+    "all_filter": [
+        {
+            "type": "where",
+            "column": "folder",
+            "operator": "=",
+            "value": "public"
+        }
+    ],
+    "fields": {
+        "id": {
+            "name_fa": "شماره",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        },
+        "path": {
+            "name_fa": "عکس",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "img"
+                }
+            }
+        },
+        "link": {
+            "name_fa": "لینک",
+            "slug_link": "",
+            "sections": {
+                "all": true
+            },
+            "type": "slug",
+            "requests": {
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "link"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "original_name": {
+            "name_fa": "نام اصلی",
+            "sections": {
+                "all": true
+            },
+            "type": "text",
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        },
+        "attach_table": {
+            "name_fa": "تیبل وصل شده",
+            "sections": {
+                "all": true
+            },
+            "type": "text",
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        }
+    }
+}

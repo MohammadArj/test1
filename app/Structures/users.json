@@ -1,0 +1,173 @@
+{
+    "template_title": "کاربران",
+    "primary_key": "id",
+    "table": "users",
+    "sections": {
+        "all": true,
+        "edit": true,
+        "single": true,
+        "delete": true
+    },
+    "fields": {
+        "id": {
+            "name_fa": "شماره",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        },
+        "user_id": {
+            "name_fa": "ایدی تلگرام",
+            "sections": {
+                "all": true,
+                "search": true,
+                "edit": true,
+                "single": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "single": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "first_name": {
+            "name_fa": "نام کاربری",
+            "sections": {
+                "all": true,
+                "search": true,
+                "edit": true,
+                "single": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "single": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "username": {
+            "name_fa": "یوزرنیم",
+            "sections": {
+                "all": true,
+                "search": true,
+                "edit": true,
+                "single": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "single": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "status": {
+            "name_fa": "وضعیت",
+            "sections": {
+                "all": true
+            },
+            "type": "select",
+            "default_value": "active",
+            "select_options": {
+                "active": {
+                    "name_fa": "فعال",
+                    "class": "bg-success"
+                },
+                "suspended": {
+                    "name_fa": "معلق",
+                    "class": "bg-warning"
+                },
+                "blocked": {
+                    "name_fa": "مسدود",
+                    "class": "bg-black"
+                }
+            },
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "select"
+                },
+                "add": {
+                    "name": "select"
+                },
+                "edit": {
+                    "name": "select"
+                }
+            }
+        },
+        "date_time": {
+            "name_fa": "تاریخ ثبت نام",
+            "sections": {
+                "all": true
+            },
+            "type": "date_time",
+            "templates": {
+                "all": {
+                    "name": "date_time"
+                }
+            }
+        }
+    }
+}

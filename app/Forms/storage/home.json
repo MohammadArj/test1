@@ -1,0 +1,362 @@
+{
+    "main_slider": {
+        "items": [
+            {
+                "img": "/assets/images/111.png",
+                "img_alt": "ljkdfjdf",
+                "href": "/d",
+                "title": "555\n",
+                "description": "لورم ایپسومتون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم."
+            }
+        ]
+    },
+    "best_offer": {
+        "title": "پیشنهادات ویژه",
+        "items": [
+            [
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": "۲۰"
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                }
+            ],
+            [
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                }
+            ],
+            [
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "discount": ""
+                }
+            ]
+        ]
+    },
+    "appService_game": {
+        "title": "خدمات درون بازی",
+        "singlePageLink": "/app-services/single",
+        "more_link": "/ddsdsd",
+        "more_link_title": "بیشتر",
+        "items": [  {
+            "img": "/assets/images/12213.jpeg",
+            "slug": "/dfdfddf",
+            "name": "کالاف دیوتی",
+            "title": "خرید سیپی کالاف دیوتی",
+            "points": "3.2"
+        },  {
+            "img": "/assets/images/12213.jpeg",
+            "slug": "/dfdfddf",
+            "name": "کالاف دیوتی",
+            "title": "خرید سیپی کالاف دیوتی",
+            "points": "3.2"
+        },  {
+            "img": "/assets/images/12213.jpeg",
+            "slug": "/dfdfddf",
+            "name": "کالاف دیوتی",
+            "title": "خرید سیپی کالاف دیوتی",
+            "points": "3.2"
+        },  {
+            "img": "/assets/images/12213.jpeg",
+            "slug": "/dfdfddf",
+            "name": "کالاف دیوتی",
+            "title": "خرید سیپی کالاف دیوتی",
+            "points": "3.2"
+        },  {
+            "img": "/assets/images/12213.jpeg",
+            "slug": "/dfdfddf",
+            "name": "کالاف دیوتی",
+            "title": "خرید سیپی کالاف دیوتی",
+            "points": "3.2"
+        }
+        ]
+    },
+    "appService_premiumAccount": {
+        "title": "اشتراک های پریمیوم",
+        "singlePageLink": "/app-services/single",
+        "more_link": "/ddsdsd",
+        "more_link_title": "بیشتر",
+        "items": [
+            {
+                "img": "/assets/images/12213.jpeg",
+                "slug": "/dfdfddf",
+                "name": "کالاف دیوتی",
+                "title": "خرید سیپی کالاف دیوتی",
+                "points": "3.2"
+            },  {
+                "img": "/assets/images/12213.jpeg",
+                "slug": "/dfdfddf",
+                "name": "کالاف دیوتی",
+                "title": "خرید سیپی کالاف دیوتی",
+                "points": "3.2"
+            },  {
+                "img": "/assets/images/12213.jpeg",
+                "slug": "/dfdfddf",
+                "name": "کالاف دیوتی",
+                "title": "خرید سیپی کالاف دیوتی",
+                "points": "3.2"
+            },  {
+                "img": "/assets/images/12213.jpeg",
+                "slug": "/dfdfddf",
+                "name": "کالاف دیوتی",
+                "title": "خرید سیپی کالاف دیوتی",
+                "points": "3.2"
+            },  {
+                "img": "/assets/images/12213.jpeg",
+                "slug": "/dfdfddf",
+                "name": "کالاف دیوتی",
+                "title": "خرید سیپی کالاف دیوتی",
+                "points": "3.2"
+            }
+        ]
+    },
+    "sell_game": {
+        "title": "فروش بازی",
+        "more_link": "/ddsdsd",
+        "more_link_title": "بیشتر",
+        "btn_title": "سفارش",
+        "items": [
+            {
+                "img": "/assets/images/122.png",
+                "img_alt": "",
+                "href": "",
+                "tags": [
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#DF5757",
+                        "title": "PS4"
+                    },
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#0B971E",
+                        "title": "XBOX"
+                    }
+                ],
+                "title": "555\n",
+                "description": "لورم ایپسومتون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم."
+            },
+            {
+                "img": "/assets/images/122.png",
+                "href": "",
+                "tags": [
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#DF5757",
+                        "title": "PS4"
+                    },
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#0B971E",
+                        "title": "XBOX"
+                    }
+                ],
+                "title": "233322\n",
+                "description": "لورم ایپسومتون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم."
+            },
+            {
+                "img": "/assets/images/122.png",
+                "href": "",
+                "tags": [
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#DF5757",
+                        "title": "PS4"
+                    },
+                    {
+                        "href": "/dffdfdfffff",
+                        "color": "#0B971E",
+                        "title": "XBOX"
+                    }
+                ],
+                "title": "2332322323223\n",
+                "description": "لورم ایپسومتون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم."
+            }
+        ]
+    },
+    "gift_card": {
+        "title": "گیفت کارت ها",
+        "more_link": "/ddsdsd",
+        "more_link_title": "بیشتر",
+        "btn_title": "سفارش",
+        "items": [
+            [
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "/jkkk",
+                    "title": "2323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                },
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "",
+                    "title": "2332322323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                }
+            ],
+            [
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "/jkkk",
+                    "title": "2323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                },
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "",
+                    "title": "2332322323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                }
+            ],
+            [
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "/jkkk",
+                    "title": "2323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                },
+                {
+                    "img": "/assets/images/1231.png",
+                    "img_alt": "dssd",
+                    "href": "",
+                    "title": "2332322323223\n",
+                    "description": "لورم ایپسkkxmvdlkfmvsdم."
+                }
+            ]
+        ]
+    },
+    "account_dealing": [
+        {
+            "title": "اکانت ها",
+            "sub_title": "خرید و فروش انواع اکانت بازی",
+            "more_link": "/ddsdsd",
+            "more_link_title": "بیشتر",
+            "background_color": "linear-gradient(149.46deg,#450af5,#8e8ee5 99.16%)",
+            "icon": "/assets/icons/users.svg",
+            "items": [
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                }
+            ]
+        },
+        {
+            "title": "اسکین ها",
+            "sub_title": "خرید و فروش انواع اکانت بازی",
+            "more_link": "/ddsdsd",
+            "background_color": "linear-gradient(149.46deg,#f50a0a,#e58e8e 99.16%)",
+            "more_link_title": "بیشتر",
+            "icon": "/assets/icons/users.svg",
+            "items": [
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                },
+                {
+                    "img": "/assets/images/12121212.webp",
+                    "img_alt": "",
+                    "href": "/12",
+                    "title": "1111\n",
+                    "description": "لورم ایپسومتون بلکه روزنا.",
+                    "offers": "30,000"
+                }
+            ]
+        }
+    ]
+}

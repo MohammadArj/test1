@@ -1,0 +1,34 @@
+{
+    "view_path_edit": "admin.vendors.sections.jsonEdit",
+    "forms_path": "app/Forms/Settings/",
+    "template_title": "تنظیمات",
+    "table": "json_storage",
+    "sections": {
+        "all": true,
+        "edit": true,
+        "search": true
+    },
+    "all_filter": [
+        {
+            "type": "where",
+            "column": "type",
+            "operator": "=",
+            "value": "setting"
+        }
+    ],
+    "fields": {
+        "name_fa": {
+            "name_fa": "بخش",
+            "type": "text",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        }
+    }
+}

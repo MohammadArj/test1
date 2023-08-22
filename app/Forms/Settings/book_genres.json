@@ -1,0 +1,21 @@
+{
+    "name": "genres",
+    "title": "ژانر کتاب ها",
+    "type": "array",
+    "format": "table",
+    "uniqueItems": true,
+    "items": {
+        "type": "object",
+        "title": "ژانر",
+        "properties": {
+            "name": {
+                "title": "نام انگلیسی ژانر",
+                "type": "string"
+            },
+            "name_fa": {
+                "title": "نام فارسی ژانر",
+                "type": "string"
+            }
+        }
+    }
+}

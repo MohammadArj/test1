@@ -1,0 +1,246 @@
+{
+    "template_title": "چپتر ها",
+    "table": "chapters",
+    "sections": {
+        "add": true,
+        "edit": true,
+        "delete": true,
+        "multiple_delete": true
+    },
+    "fields": {
+        "id": {
+            "name_fa": "شماره",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        },
+        "status": {
+            "name_fa": "وضعیت",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "select",
+            "default_value": "deactivate",
+            "select_options": {
+                "active": {
+                    "name_fa": "فعال",
+                    "class": "bg-success"
+                },
+                "deactivate": {
+                    "name_fa": "غیر فعال",
+                    "class": "bg-danger"
+                }
+            },
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "select"
+                },
+                "add": {
+                    "name": "select"
+                },
+                "edit": {
+                    "name": "select"
+                }
+            }
+        },
+        "book_id": {
+            "name_fa": "کتاب",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "select-ref",
+            "select_options": {
+                "type": "table",
+                "table": "books",
+                "title": "title",
+                "value": "id"
+            },
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "select-ref"
+                },
+                "add": {
+                    "name": "select-ref"
+                },
+                "edit": {
+                    "name": "select-ref"
+                }
+            }
+        },
+        "volume": {
+            "name_fa": "شماره جلد کتاب",
+            "type": "text",
+            "default_value": "",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "requests": [],
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "number"
+                },
+                "edit": {
+                    "name": "number"
+                }
+            }
+        },
+        "volume_display_name":  {
+            "name_fa": "جلد",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "index_num":  {
+            "name_fa": "شماره چپتر",
+            "type": "text",
+            "default_value": "",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "requests": [],
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "number"
+                },
+                "edit": {
+                    "name": "number"
+                }
+            }
+        },
+        "subscription_type": {
+            "name_fa": "وضعیت هزینه",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "select",
+            "default_value": "free",
+            "select_options": {
+                "premium": {
+                    "name_fa": "پولی",
+                    "class": "bg-success"
+                },
+                "free": {
+                    "name_fa": "رایگان",
+                    "class": "bg-info"
+                }
+            },
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "select"
+                },
+                "add": {
+                    "name": "select"
+                },
+                "edit": {
+                    "name": "select"
+                }
+            }
+        },
+        "content": {
+            "name_fa": "محتوای چپتر",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": false,
+                    "types": ""
+                },
+                "edit_submit": {
+                    "status": false,
+                    "types": ""
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "textarea-tinymce",
+                    "properties": {
+                        "rows": "24"
+                    }
+                },
+                "edit": {
+                    "name": "textarea-tinymce",
+                    "properties": {
+                        "rows": "24"
+                    }
+                }
+            }
+        }
+    }
+}

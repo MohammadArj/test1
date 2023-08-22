@@ -1,0 +1,13 @@
+[
+ 
+    {
+        "name_fa": "ادمین ها",
+        "route": "admin.adminUsers",
+        "icon": "fa fa-user-shield"
+    },
+    {
+        "name_fa": "خروج",
+        "route": "admin.logout",
+        "icon": "bi bi-box-arrow-right"
+    }
+]

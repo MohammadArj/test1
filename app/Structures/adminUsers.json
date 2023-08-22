@@ -1,0 +1,397 @@
+{
+  "template_title": "مدیریت ادمین ها",
+  "table": "admin_users",
+  "sections": {
+    "all": true,
+    "add": true,
+    "edit": true,
+    "delete": true,
+    "multiple_delete": true
+  },
+  "fields": {
+    "id": {
+      "name_fa": "شماره",
+      "sections": {
+        "all": true,
+        "search": true
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        }
+      }
+    },
+    "display_name": {
+      "name_fa": "نام نمایشی",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true,
+        "search": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "username": {
+      "name_fa": "یوزرنیم",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true,
+        "search": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "telegram_chat_id": {
+      "name_fa": "ایدی تلگرام",
+      "sections": {
+        "all": false,
+        "add": false,
+        "edit": false
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "phone_number": {
+      "name_fa": "شماره همراه",
+      "sections": {
+        "all": false,
+        "add": false,
+        "edit": false,
+        "search": false
+      },
+      "type": "phone_number",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "gig_price": {
+      "name_fa": "قیمت هر گیگ",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "price"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "status": {
+      "name_fa": "وضعیت",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "select",
+      "default_value": "active",
+      "select_options": {
+        "active": {
+          "name_fa": "فعال",
+          "class": "bg-success"
+        },
+        "deactivate": {
+          "name_fa": "غیر فعال",
+          "class": "bg-danger"
+        }
+      },
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "select"
+        },
+        "add": {
+          "name": "select"
+        },
+        "edit": {
+          "name": "select"
+        }
+      }
+    },
+    "role": {
+      "name_fa": "نقش",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "select",
+      "default_value": "sub_admin",
+      "select_options": {
+        "master_admin": {
+          "name_fa": "اصلی",
+          "class": "bg-success"
+        },
+        "sub_admin": {
+          "name_fa": "زیرشاخه",
+          "class": "bg-info"
+        }
+      },
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "select"
+        },
+        "add": {
+          "name": "select"
+        },
+        "edit": {
+          "name": "select"
+        }
+      }
+    },
+    "email": {
+      "name_fa": "ایمیل",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true,
+        "search": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|email|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|email|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "access_to_all_users": {
+      "name_fa": "دسترسی به تمام کاربران بات",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "select",
+      "default_value": "deactivate",
+      "select_options": {
+        "active": {
+          "name_fa": "فعال",
+          "class": "bg-success"
+        },
+        "deactivate": {
+          "name_fa": "غیر فعال",
+          "class": "bg-danger"
+        }
+      },
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "select"
+        },
+        "add": {
+          "name": "select"
+        },
+        "edit": {
+          "name": "select"
+        }
+      }
+    },
+    "password": {
+      "name_fa": "پسورد",
+      "sections": {
+        "add": true,
+        "edit": true
+      },
+      "type": "password",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "password"
+        },
+        "edit": {
+          "name": "password"
+        }
+      }
+    },
+    "bot_ids": {
+      "name_fa": "بات های مجاز",
+      "sections": {
+        "add": true,
+        "edit": true
+      },
+      "type": "str-array",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "add": {
+          "name": "str-array"
+        },
+        "edit": {
+          "name": "str-array"
+        }
+      }
+    },
+    "permissions": {
+      "name_fa": "",
+      "sections": {
+        "add": true,
+        "edit": true
+      },
+      "type": "text",
+      "templates": {
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "template_title": "لاگ ادمین ها",
+  "table": "admin_logs",
+  "sections": {
+    "all": true,
+    "actions": false
+  },
+  "fields": {
+    "id": {
+      "name_fa": "شماره",
+      "sections": {
+        "all": true,
+        "search": true
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        }
+      }
+    },
+    "admin_id": {
+      "name_fa": "ایدی ادمین",
+      "sections": {
+        "all": false
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "admin_username": {
+      "name_fa": "نام ادمین",
+      "sections": {
+        "all": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "log_type": {
+      "name_fa": "نوع لاگ",
+      "sections": {
+        "all": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "content": {
+      "name_fa": "توضیح",
+      "sections": {
+        "all": true
+      },
+      "type": "text",
+      "requests": {
+      },
+      "templates": {
+        "all": {
+          "name": "text-trim"
+        },
+        "single": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "date_time": {
+      "name_fa": "تاریخ",
+      "sections": {
+        "all": true
+      },
+      "type": "date_time",
+      "templates": {
+        "all": {
+          "name": "date_time"
+        }
+      }
+    }
+  }
+}
+

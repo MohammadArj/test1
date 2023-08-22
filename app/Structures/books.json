@@ -1,0 +1,380 @@
+{
+    "template_title": "کتاب ها",
+    "table": "books",
+    "sections": {
+        "add": true,
+        "edit": true,
+        "delete": true,
+        "multiple_delete": true
+    },
+    "fields": {
+        "id": {
+            "name_fa": "شماره",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        },
+        "name": {
+            "name_fa": "نام کتاب",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true,
+                "search": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "title": {
+            "name_fa": "سرتیتر",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true,
+                "search": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "slug": {
+            "name_fa": "لینک",
+            "slug_link": "",
+            "slug_to": "name",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "slug",
+            "requests": {
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "link"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "status": {
+            "name_fa": "وضعیت",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "select",
+            "default_value": "active",
+            "select_options": {
+                "active": {
+                    "name_fa": "فعال",
+                    "class": "bg-success"
+                },
+                "deactivate": {
+                    "name_fa": "غیر فعال",
+                    "class": "bg-danger"
+                }
+            },
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "select"
+                },
+                "add": {
+                    "name": "select"
+                },
+                "edit": {
+                    "name": "select"
+                }
+            }
+        },
+        "img": {
+            "name_fa": "عکس",
+            "sections": {
+                "all": false,
+                "add": true,
+                "edit": true
+            },
+            "type": "img",
+            "path_db": "/uploads/",
+            "path_folder": "/uploads/",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|image|mimes:jpeg,png,jpg,ico,webp|max:20048"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "image|mimes:jpeg,png,jpg,ico,webp|max:20048"
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "img"
+                },
+                "edit": {
+                    "name": "img"
+                }
+            }
+        },
+        "author": {
+            "name_fa": "نویسنده",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                },
+                "add": {
+                    "name": "text"
+                },
+                "edit": {
+                    "name": "text"
+                }
+            }
+        },
+        "chapter_price": {
+            "name_fa": "قیمت هر چپتر",
+            "sections": {
+                "all": true,
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "required|max:255"
+                }
+            },
+            "templates": {
+                "all": {
+                    "name": "price"
+                },
+                "add": {
+                    "name": "number"
+                },
+                "edit": {
+                    "name": "number"
+                }
+            }
+        },
+        "discount_percent_all_in_one":  {
+            "name_fa": "تخفیف برای خرید یکجا",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "number"
+                },
+                "edit": {
+                    "name": "number"
+                }
+            }
+        },
+        "genre": {
+            "name_fa": "ژانر",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "section_ref": "book_genres",
+            "select_options": {
+                "value_type": "array",
+                "value": ["name","name_fa"],
+                "title": [
+                    "name_fa"
+                ]
+            },
+            "type": "multiple-select",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": "max:255"
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": "max:255"
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "multiple-select-ref"
+                },
+                "edit": {
+                    "name": "multiple-select-ref"
+                }
+            }
+        },
+        "specifications": {
+            "name_fa": "مشخصات",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "type": "json",
+            "json_pattern": {
+                "title": " ",
+                "type": "array",
+                "format": "table",
+                "items": {
+                    "type": "object",
+                    "title": "مشخصات",
+                    "properties": {
+                        "property_key": {
+                            "title": "نام مشخصه",
+                            "type": "string"
+                        },
+                        "property_value": {
+                            "title": "محتوای مشخه",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "requests": {
+                "add_submit": {
+                    "status": false,
+                    "types": ""
+                },
+                "edit_submit": {
+                    "status": false,
+                    "types": ""
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "json"
+                },
+                "edit": {
+                    "name": "json"
+                }
+            }
+        },
+        "summery": {
+            "name_fa": "خلاصه",
+            "sections": {
+                "add": true,
+                "edit": true
+            },
+            "type": "text",
+            "requests": {
+                "add_submit": {
+                    "status": true,
+                    "types": ""
+                },
+                "edit_submit": {
+                    "status": true,
+                    "types": ""
+                }
+            },
+            "templates": {
+                "add": {
+                    "name": "textarea",
+                    "properties": {
+                        "rows": "6"
+                    }
+                },
+                "edit": {
+                    "name": "textarea",
+                    "properties": {
+                        "rows": "6"
+                    }
+                }
+            }
+        }
+    }
+}

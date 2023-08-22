@@ -1,0 +1,341 @@
+{
+  "template_title": "اکانت پروکسی",
+  "view_path_all": "admin.pages.proxyAccounts.all.all",
+  "view_path_edit": "admin.pages.proxyAccounts.edit.edit",
+  "view_path_add": "admin.pages.proxyAccounts.add.add",
+  "view_path_single": "admin.pages.proxyAccounts.single.single",
+  "table": "proxy_accounts",
+  "sections": {
+    "single": true,
+    "add": true,
+    "edit": true,
+    "delete": false,
+    "multiple_delete": false
+  },
+  "fields": {
+    "id": {
+      "name_fa": "شماره",
+      "sections": {
+        "all": true,
+        "single": true,
+        "search": true
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        }
+      }
+    },
+    "status": {
+      "name_fa": "وضعیت",
+      "sections": {
+        "all": true,
+        "single": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "select",
+      "default_value": "active",
+      "select_options": {
+        "active": {
+          "name_fa": "فعال",
+          "class": "bg-success"
+        },
+        "suspended": {
+          "name_fa": "معلق",
+          "class": "bg-warning"
+        },
+        "blocked": {
+          "name_fa": "مسدود",
+          "class": "bg-black"
+        }
+      },
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "select"
+        },
+        "add": {
+          "name": "select"
+        },
+        "edit": {
+          "name": "select"
+        }
+      }
+    },
+    "admin_display_name": {
+      "name_fa": "سازنده حساب",
+      "sections": {
+        "all": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "username": {
+      "name_fa": "نام کاربری",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true,
+        "search": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "text"
+        },
+        "edit": {
+          "name": "text"
+        }
+      }
+    },
+    "password": {
+      "name_fa": "پسورد",
+      "sections": {
+        "add": true,
+        "edit": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:500"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:500"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "text"
+        },
+        "add": {
+          "name": "password"
+        },
+        "edit": {
+          "name": "password"
+        }
+      }
+    },
+    "type_account": {
+      "name_fa": "نوع اکانت",
+      "sections": {
+        "all": true,
+        "single": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "select",
+      "default_value": "normal",
+      "select_options": {
+        "normal": {
+          "name_fa": "عادی",
+          "class": "bg-primary"
+        },
+        "vip": {
+          "name_fa": "ویژه",
+          "class": "bg-info"
+        }
+      },
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "select"
+        },
+        "add": {
+          "name": "select"
+        },
+        "edit": {
+          "name": "select"
+        }
+      }
+    },
+    "traffic_left_over_vip": {
+      "name_fa": "ترافیک نت ملی",
+      "sections": {
+        "all": true,
+        "single": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "traffic"
+        },
+        "add": {
+          "name": "traffic"
+        },
+        "edit": {
+          "name": "traffic"
+        }
+      }
+    },
+    "traffic_left_over": {
+      "name_fa": "ترافیک نت عادی",
+      "sections": {
+        "all": true,
+        "add": true,
+        "edit": true,
+        "single": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "required|max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "required|max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "traffic"
+        },
+        "add": {
+          "name": "traffic"
+        },
+        "edit": {
+          "name": "traffic"
+        }
+      }
+    },
+    "traffic_total_used": {
+      "name_fa": "ترافیک مصرف شده",
+      "sections": {
+        "all": true,
+        "single": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "traffic"
+        },
+        "add": {
+          "name": "number"
+        },
+        "edit": {
+          "name": "number"
+        }
+      }
+    },
+    "expiry_time": {
+      "name_fa": "تاریخ انقضا",
+      "sections": {
+        "all": false,
+        "single": true,
+        "add": true,
+        "edit": true
+      },
+      "type": "text",
+      "requests": {
+        "add_submit": {
+          "status": true,
+          "types": "max:255"
+        },
+        "edit_submit": {
+          "status": true,
+          "types": "max:255"
+        }
+      },
+      "templates": {
+        "all": {
+          "name": "expiry_time"
+        },
+        "add": {
+          "name": "expiry_time"
+        },
+        "edit": {
+          "name": "expiry_time"
+        }
+      }
+    },
+    "date_time": {
+      "name_fa": "تاریخ ساخت",
+      "sections": {
+        "all": true
+      },
+      "type": "date_time",
+      "templates": {
+        "all": {
+          "name": "date_time"
+        }
+      }
+    }
+
+  }
+}

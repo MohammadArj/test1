@@ -1,0 +1,35 @@
+{
+    "view_path_edit": "admin.vendors.sections.jsonEdit",
+    "forms_path": "app/Forms/Templates/",
+    "template_title": "صفحه ها",
+    "table": "json_storage",
+    "sections": {
+        "all": true,
+        "edit": true,
+        "search": true,
+        "upload_pic_jsonEdit": true
+    },
+    "all_filter": [
+        {
+            "type": "where",
+            "column": "type",
+            "operator": "=",
+            "value": "template"
+        }
+    ],
+    "fields": {
+        "name_fa": {
+            "name_fa": "صفحه",
+            "type": "text",
+            "sections": {
+                "all": true,
+                "search": true
+            },
+            "templates": {
+                "all": {
+                    "name": "text"
+                }
+            }
+        }
+    }
+}
